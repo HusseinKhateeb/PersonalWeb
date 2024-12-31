@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussein's personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <ul>
+            <li id="burgerMenu" onclick=""><i class="fa-solid fa-bars"></i></li>
+            <li><img src="image.png" alt=""></li>
+            <li><a href="#name" class="menuItem">ABOUT</a></li>
+            <li><a href="#expId" class="menuItem">EXPERIENCE</a></li>
+            <li><a href="#eduId" class="menuItem">EDUCATION</a></li>
+            <li><a href="#skills" class="menuItem">SKILLS</a></li>
+            <li><a href="#interests" class="menuItem">INTERESTS</a></li>
+            <li><a href="#awards" class="menuItem">AWARDS</a></li>
+        </ul>
+        <div id="aboutSection">
+            <h1 id="name"><span id="fname">Hussein</span> <span id="lname">Khateeb</span></h1>
+            <h2 id="location">BETHLEHEM - DEHESHEH CAMP - (+970) 598575309 - <span id="email">HUSSAIN.AL.KHTEEB.9@GMAIL.COM</span></h2>
+            <p id="intro">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to
+                corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100002564850583" class="iconsA"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="iconsA"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/HusseinKhateeb" class="iconsA"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/hussein._al_.khateeb/" class="iconsA"><i class="fa-brands fa-instagram"></i></a>
+                
+            </div>
+        </div>
+        <div id="expSection">
+            <h1 id="expId">EXPERIENCE</h1>
+            <h2 id="restaurantMenu">RESTAURANT MENU PROJECT</h2>
+            <h3 class="bu">BETHLEHEM UNIVERSITY</h3>
+            <h2 id="restDate">February 2023 - june 2023</h2>
+            <p id="resP">For my university project, I created a restaurant menu application using JavaFX and object-oriented programming. The app allows users to browse menu categories, view item details, and add items to their order. I used JavaFX components like buttons and tables for the interface, and implemented classes like MenuItem, Category, and Order to organize the code. This project helped me strengthen my understanding of JavaFX and key OOP concepts such as inheritance and encapsulation.</p>
+        </div>
+        <div id="uiuxSection">
+            <h2 id="uiux">UI UX PROJECT</h2>
+            <h3 class="bu">BETHLEHEM UNIVERSITY</h3>
+            <h2 id="uiuxDate">September 2024 - November 2024</h2>
+            <p id="uiuxP">For my UI/UX project, I used Figma to design an intuitive and user-friendly interface. The project involved creating wireframes, prototypes, and high-fidelity designs to ensure a smooth user experience. I focused on usability, navigation, and aesthetics, considering user feedback to improve design elements. Figma's collaborative features allowed me to work efficiently and iterate on the design with ease, resulting in a polished interface that balances functionality and visual appeal.</p>
+        </div>
+        <div id="educationSection">
+            <h1 id="eduId">EDUCATION</h1>
+            <h2 id="buH">BETHLEHEM UNIVERSITY</h2>
+            <H4 id="stDate">September 2022 - Present</H4>
+            <h3 id="buD">BACHELOR OF SOFTWARE ENGINEERING</h3>
+        </div>
+        <div id="skillsSection">
+            <h1 id="skills">SKILLS</h1>
+            <h2 id="plt">PROGRAMMING LANGUAGES & TOOLS</h2>
+            <div class="languages">
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <h3 id="workflow">WORKFLOW</h3>
+            <h4 id="workDesc"><span class="checkmark">&#10003;</span> Mobile-First, Responsive Design <br><span class="checkmark">&#10003;</span> Cross Browser Testing & Debugging <br><span class="checkmark">&#10003;</span> Cross Functional Team <br><span class="checkmark">&#10003;</span> Agile Development & Scrum</h4>
+        </div>
+        <div id="interestsSection">
+            <h1 id="interests">INTERESTS</h1>
+            <P id="intp">I have a passion for programming, particularly in Java and web development. Java offers a powerful platform for building robust, scalable applications, which aligns with my interest in creating solutions that can handle real-world challenges. Web development also excites me, as it combines creativity with technical skill, allowing me to design interactive experiences for users. I enjoy learning new frameworks and technologies that enhance my abilities in both front-end and back-end development. <br><br>Beyond my tech interests, I’m a big fan of outdoor sports like ping pong, football, and badminton. These sports provide a great way to stay active, improve focus, and enjoy friendly competition. Ping pong helps sharpen my reflexes, football keeps me physically fit, and badminton is a great mix of both agility and endurance. These activities are a perfect counterbalance to my tech pursuits, giving me a refreshing change of pace.</P>
+        </div>
+        <div id="awardsSection">
+            <h1 id="awards">AWARDS & CERTIFICATION</h1>
+            <p id="ieee">&#x1F3C6; IEEE Xtreme Certification</p>
+        </div>
+    </div>
+    <script>
+        const burgerMenu = document.getElementById('burgerMenu');
+        const ul = document.querySelector('ul');
+        burgerMenu.addEventListener('click', () => {
+            ul.classList.toggle('show');
+        });
+        const menuItems = document.querySelectorAll('.menuItem');
+        menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+        menuItems.forEach(item => item.classList.remove('selected'));
+        this.classList.add('selected');
+    });
+});
+
+    </script>
+</body>
+</html>
